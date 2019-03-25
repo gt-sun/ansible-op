@@ -1,0 +1,8 @@
+- hosts: ftp
+  gather_facts: false
+  vars:
+    ftp_user: username
+    ftp_passwd: PASSWD
+
+  roles:
+    - add-ftp-user
